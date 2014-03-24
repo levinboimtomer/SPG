@@ -4,9 +4,9 @@ SPG is suited for optimizing differentiable real-valued multivariate functions
 subject to simple constraints (namely, over a closed convex set)
 
 The code is based on Mark Schmidt's minConf_SPG matlab implementation
-http://www.di.ens.fr/~mschmidt/Software/minConf.html)
+http://www.di.ens.fr/~mschmidt/Software/minConf.html
 
-To test:
+To test the code, download and run: 
 	python SPG_test.py
 
 Incudes:
