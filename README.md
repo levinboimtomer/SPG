@@ -9,11 +9,13 @@ http://www.di.ens.fr/~mschmidt/Software/minConf.html)
 To test:
 	python SPG_test.py
 
-Supports:
-- numerical differentiation
-- 
+Incudes:
+- Numerical differentiation
+- Projection on a bounded range 
+- Projection on the probability simplex (Duchi et al, "Efficient projections onto the l1-Ball for Learning in High Dimension") 
 
-
-
+Require:
+- cython (if you use the provided projections)
 
 -- Tomer Levinboim
+March 2014
