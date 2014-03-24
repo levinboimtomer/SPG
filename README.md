@@ -14,8 +14,7 @@ Incudes:
 - Projection on a bounded range 
 - Projection on the probability simplex (Duchi et al, "Efficient projections onto the l1-Ball for Learning in High Dimension") 
 
-Require:
+Requires:
 - cython (if you use the provided projections)
 
--- Tomer Levinboim
-March 2014
+-- Tomer Levinboim, March 2014
