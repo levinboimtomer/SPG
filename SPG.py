@@ -100,9 +100,8 @@ def SPG(funObj0, funProj, x, options=default_options):
             log(options, 1, 'Directional Derivative below progTol')
             break
 
-        # TODO: replace all np.min and np.max by min and max
         if i == 1:
-            t = np.min([1, 1.0 / np.sum(np.absolute(g))])
+            t = min([1, 1.0 / np.sum(np.absolute(g))])
         else:
             t = 1.0
 
@@ -238,7 +237,7 @@ def polyinterp2(points):
     d2 = np.sqrt(d1**2 - points[minPos, 2] * points[notMinPos,2])
     if np.isreal(d2):
         t = points[notMinPos, 0] - (points[notMinPos, 0] - points[minPos, 0])*((points[notMinPos, 2] + d2 - d1) / (points[notMinPos, 2] - points[minPos, 2] + 2*d2))
-        minPos = np.min([np.max([t, points[minPos, 0]]), points[notMinPos, 0]])
+        minPos = min([max([t, points[minPos, 0]]), points[notMinPos, 0]])
     else:
         minPos = np.mean(points[:, 0])
     return minPos
